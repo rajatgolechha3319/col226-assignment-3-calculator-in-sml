@@ -1,4 +1,5 @@
-Grammar for Rationals : 
+# Grammar for Rationals : 
+```
 G = <N,T,P,S> where
 N = {<Rationals>, <Decimals>, <Fractions>, <Integer>, <Sign>, <Number>, <Digit>}
 T = {+, -, /, ., 0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
@@ -12,8 +13,9 @@ P = {
 <Decimals> = <Integer> . ".". <Digit>* . ( <Number> )
 }
 S = <Rationals>
-
-Grammar for Expressions :
+```
+# Grammar for Expressions :
+```
 G = <N,T,P,S> where
 N = {<Expression>, <Term>, <Factor>, <Rational>, <Variable>, <Type>, <Identifier>, <Letter>, <Alphanumeric>, <Integer>, <Sign>, <Number>, <Digit>, <Fractions>, <Decimals>}
 T = {+, -, *, /, :, (, ), rational, int, A, B, C, ..., Z, a, b, c, ..., z, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, .}
@@ -35,28 +37,30 @@ P = {
 <Decimals> = <Integer> . ".". <Digit>* . ( <Number> )
 }
 S = {<Expression>}
+```
 
-
-Design Decisions : 
-
+# Design Decisions : 
+```
 1. All the helper functions used are defined in local scope. This is done to avoid name clashes with other functions in the program.
 2. The file Vaporeon.cm is used to compile the program. This is the makefile for the program.
 3. The output are in p/q format only.
 4. While the input can be in any format (p/q , [S]I.N(R) ).
+```
 
-
-Acknowledgements :
-
+# Acknowledgements :
+```
 1. The code for the parser is based on the code provided in the documentation for ML-Lex and ML-Yacc. 
 2. The code for the lexer is based on the code provided in the documentation for ML-Lex and ML-Yacc.
+```
 
-Citation Links : 
+## Citation Links : 
+```
 1. http://www.mlton.org/Documentation.attachments/mllex.pdf
 2. http://www.mlton.org/Documentation.attachments/mlyacc.pdf
 3. https://stackoverflow.com/questions/36529512/convert-fraction-to-string-with-repeating-decimal-places-in-brackets
-
-How to Run : 
-1. Download the files from gradescope.
+```
+## How to Run : 
+1. Download the files.
 2. Run sudo sml in the the current folder.
 3. Then CM.make " Vaporeon.cm ";
 4. Now run Vaporeon.parse(); in command line.
