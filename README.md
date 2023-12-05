@@ -60,14 +60,15 @@ S = {<Expression>}
 3. https://stackoverflow.com/questions/36529512/convert-fraction-to-string-with-repeating-decimal-places-in-brackets
 ```
 ## How to Run : 
+```
 1. Download the files.
 2. Run sudo sml in the the current folder.
 3. Then CM.make " Vaporeon.cm ";
 4. Now run Vaporeon.parse(); in command line.
 5. Enter the input in the format specified above.
-
+```
 Example : 
-
+```
 In : 12.23(4) + 23.46(5) ;
 Out : result = 357/10
 In : 0.(9) + 0.(9) ; 
@@ -79,3 +80,4 @@ Out : result = 20/1
 In : ( ( 1 + 2 ) - ( 11 * 1) ) ;
 Out : result = ~8/1
 
+```
